@@ -1,4 +1,5 @@
-package "openjdk-7-jdk"
+package "openjdk-7-jre-headless"
+package "openjdk-7-jre-lib"
 package "redis-server"
 package "python-flask"
 package "daemontools"

@@ -68,7 +68,7 @@ directory "/usr/local/solr-service/log" do
   action :create
 end
 
-link "/usr/local/solr-service/logstash" do
+link "/usr/local/solr-service/solr" do
   to "/usr/local/solr"
 end
 

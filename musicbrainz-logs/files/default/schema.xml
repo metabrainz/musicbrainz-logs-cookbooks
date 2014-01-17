@@ -113,19 +113,22 @@
       -->
     <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
     <field name="_version_" type="long" indexed="true" stored="true"/>
-    <field name="timestamp" type="long" indexed="true" stored="true" multiValued="false" />
-    <field name="useragent" type="string" indexed="true" stored="true" multiValued="false" />
-    <field name="ip" type="string" indexed="true" stored="true" multiValued="false" />
-    <field name="httpdate" type="string" indexed="true" stored="true" multiValued="false" />
-    <field name="method" type="string" indexed="true" stored="true" multiValued="false" />
-    <field name="request" type="string" indexed="true" stored="true" multiValued="false" />
-    <field name="protocol" type="string" indexed="true" stored="true" multiValued="false" />
-    <field name="status" type="string" indexed="true" stored="true" multiValued="false" />
-    <field name="size" type="string" indexed="true" stored="true" multiValued="false" />
+    <field name="timestamp" type="tlong" indexed="true" stored="true" multiValued="false" />
+    <field name="useragent" type="text_en" indexed="true" stored="true" multiValued="false" />
+    <field name="f_useragent" type="string" indexed="true" stored="true" multiValued="false" />
+    <field name="s_useragent" type="string" indexed="true" stored="true" multiValued="false" />
+    <field name="t_useragent" type="string" indexed="true" stored="true" multiValued="false" />
+    <field name="ip" type="text_en" indexed="true" stored="true" multiValued="false" />
+    <field name="httpdate" type="text_en" indexed="true" stored="true" multiValued="false" />
+    <field name="method" type="text_en" indexed="true" stored="true" multiValued="false" />
+    <field name="request" type="text_en" indexed="true" stored="true" multiValued="false" />
+    <field name="protocol" type="text_en" indexed="true" stored="true" multiValued="false" />
+    <field name="status" type="int" indexed="true" stored="true" multiValued="false" />
+    <field name="size" type="int" indexed="true" stored="true" multiValued="false" />
     <field name="@timestamp" type="string" indexed="true" stored="true" multiValued="false" />
     <field name="@version" type="string" indexed="true" stored="true" multiValued="false" />
     <field name="type" type="string" indexed="true" stored="true" multiValued="false" />
-    <field name="host" type="string" indexed="true" stored="true" multiValued="false" />
+    <field name="host" type="text_en" indexed="true" stored="true" multiValued="false" />
     <field name="uri" type="string" indexed="true" stored="true" multiValued="false" />
 
     <!-- Dynamic field definitions allow using convention over configuration
